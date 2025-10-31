@@ -1,0 +1,129 @@
+/* ====================
+        ITEM CARDS
+   ==================== */
+   .item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item-card {
+    position: relative;
+    display: flex;
+    background: gradient(90deg, #274060, #335C81);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+    transform: scale(1.02);
+}
+
+.item-info {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #183255;
+}
+
+.item-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #609bcf;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.item-more {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    background-color: #1B2845;
+    color: #65AFFF;
+    border: 1px solid #65AFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.item-more:hover {
+    background-color: rgba(88, 153, 226, 0.2);
+}
+
+.item-image {
+    width: 40%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.item-image img {
+    max-width: 100%;
+    height: auto;
+    height: 100%;
+    margin: 10%;
+    border-radius: 5%;
+}
+
+.item-delete {
+    background-color: #14B8A6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px auto;
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.item-delete:hover {
+    background-color: #0F766E;
+}
+
+/* ====================
+   RESPONSIVE DESIGN
+   ==================== */
+@media (max-width: 768px) {
+    .item-card {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .item-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .item-info {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-content h1 {
+        font-size: 1.2rem;
+    }
+    .banner-login {
+        top: 10px;
+        right: 10px;
+    }
+}

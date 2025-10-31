@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="/src/">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Science Annals</title>
+        <link rel="stylesheet" href="styles/pages/home.css">
+        <link rel="stylesheet" href="styles/components/card.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h1>Science Annals</h1>
+            </div>
+            <!-- User area in the banner -->
+            <div class="banner-login">
+                <div id="user-area" class="user-area">
+                    <div id="profile-dropdown-container" class="dropwdown">
+                        <button id="btn-profile" class="login-button-banner">User</button>
+                        <div id="button-user-details-container" class="button-logout-container">
+                            <button id="btnDetails" class="btnLogout">Profile</button>
+                        </div>
+                        <div id="button-logout-container" class="button-logout-container">
+                            <button id="btnLogout" class="btnLogout">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="columns-container">
+            <section id="Products-section" class="column">
+                <h2>Products</h2>
+                <button id="btnAddProduct" class="btn-add" style="display:none;">Add new product</button>
+                <div id="Products-list" class="item-list">
+                    <!-- Here will be the products list -->
+                </div>
+            </section>
+
+            <section id="Persons-section" class="column">
+                <h2>Persons</h2>
+                <button id="btnAddPerson" class="btn-add" style="display:none;">Add new Person</button>
+                <div id="Persons-list" class="item-list">
+                    <!-- Here will be the Persons list -->
+                </div>
+            </section>
+
+            <section id="Entities-section" class="column">
+                <h2>Entities</h2>
+                <button id="btnAddEntity" class="btn-add" style="display:none;">Add new Entity</button>
+                <div id="Entities-list" class="item-list">
+                    <!-- Here will be the entities list -->
+                </div>
+            </section>
+
+            <section id="Associations-section" class="column">
+                <h2>Associations</h2>
+                <button id="btnAddAssociation" class="btn-add" style="display:none;">Add new Association</button>
+                <div id="Associations-list" class="item-list">
+                    <!-- Here will be the entities list -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Scripts -->
+        <script src="auth/auth.js" type="module"></script>
+        <script src="ui/cardsDisplay.js" type="module"></script>
+    </body>
+</html> 

@@ -1,0 +1,72 @@
+<!-- src/catalog/detail/detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/src/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Annals</title>
+    <!-- desde catalog/detail → subimos dos niveles hasta styles/pages -->
+    <link rel="stylesheet" href="styles/pages/home.css" />
+    <link rel="stylesheet" href="styles/pages/detail.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+          <h1 id="banner-name">Science Annals</h1>
+      </div>
+      <!-- User area in the banner -->
+      <div class="banner-login">
+          <div id="user-area" class="user-area">
+              <div id="profile-dropdown-container" class="dropwdown">
+                  <button id="btn-profile" class="login-button-banner">User</button>
+                  <div id="button-user-details-container" class="button-logout-container">
+                      <button id="btnDetails" class="btnLogout">Profile</button>
+                  </div>
+                  <div id="button-logout-container" class="button-logout-container">
+                      <button id="btnLogout" class="btnLogout">Log Out</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-grid">
+        <!-- Image Section -->
+        <div class="content-image">
+          <div id="element-image"></div>
+        </div>
+
+        <!-- Information Section -->
+        <div class="content-info">
+          <div id="element-content" class="element-details"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Wikipedia section -->
+    <section class="wiki-section">
+      <iframe id="wiki-iframe" src="" width="100%" height="600"></iframe>
+    </section>
+
+    <!-- Button to Delete the element and update the page if the user is logged in -->
+    <div class="delete-update-button-container">
+      <div class="delete-button-container">
+        <button id="btnDelete" class="delete-button" style="display: none;">Delete</button>
+      </div>
+      <div class="update-button-container">
+        <button id="btnUpdate" class="update-button" style="display: none;">Update</button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- detailGenerator.js está en este mismo directorio -->
+    <script src="catalog/detail/detailGenerator.js" type="module"></script>
+    <!-- auth.js quedó en js/auth.js, así que subimos tres niveles -->
+    <script src="auth/auth.js" type="module"></script>
+  </body>
+</html>

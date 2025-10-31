@@ -1,0 +1,174 @@
+/* ====================
+   MAIN CONTENT STYLES
+   ==================== */
+   .main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Image section styles */
+.content-image {
+    text-align: center;
+}
+
+.content-image img {
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Element information styles */
+.content-info {
+    padding: 1rem;
+}
+
+.content-info h1{
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    color: #0F766E;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.element-title {
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+    color: #0F766E;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.element-details p {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #64748B;
+    color: #65AFFF;
+}
+
+/* ====================
+   Wikipedia iframe section
+   ==================== */
+.wiki-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#wiki-iframe {
+    border: 2px solid #5899E2;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(15, 118, 110, 0.2);
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    height: 600px;
+    transition: all 0.3s ease;
+}
+
+#wiki-iframe:hover {
+    box-shadow: 0 6px 12px #335C81;
+    border-color: #65AFFF;
+}
+
+/* ====================
+   Button Container Styles
+   ==================== */
+.delete-update-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.delete-button-container,
+.update-button-container {
+    flex: 0 1 auto;
+}
+
+/* ====================
+   Button Styles
+   ==================== */
+.delete-button,
+.update-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.delete-button {
+    background-color: #dc2626;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+.update-button {
+    background-color: #65AFFF;
+    color: black;
+}
+
+.update-button:hover {
+    background-color: #81b3e7;
+    transform: translateY(-2px);
+}
+
+#btnDeleteUser{
+    float:initial
+}
+
+/* ====================
+   Responsive Design
+   ==================== */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-image {
+        margin-bottom: 1rem;
+    }
+
+    .content-image img {
+        max-width: 80%;
+    }
+
+    .wiki-section {
+        padding: 0 0.5rem;
+    }
+    
+    #wiki-iframe {
+        height: 400px;
+    }
+
+    .delete-update-button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .delete-button,
+    .update-button {
+        width: 100%;
+        max-width: 200px;
+    }
+}

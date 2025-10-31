@@ -1,0 +1,111 @@
+<!-- src/users/detail/userDetails.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/src/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Annals - Profile</title>
+    <!-- desde users/detail → subimos dos niveles hasta styles/pages -->
+    <link rel="stylesheet" href="styles/pages/home.css" />
+    <link rel="stylesheet" href="styles/pages/detail.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+          <h1 id="banner-name">Science Annals</h1>
+      </div>
+      <!-- User area in the banner -->
+      <div class="banner-login">
+          <div id="user-area" class="user-area">
+              <div id="profile-dropdown-container" class="dropwdown">
+                  <button id="btn-profile" class="login-button-banner">User</button>
+                  <div id="button-user-details-container" class="button-logout-container">
+                      <button id="btnDetails" class="btnLogout">Profile</button>
+                  </div>
+                  <div id="button-logout-container" class="button-logout-container">
+                      <button id="btnLogout" class="btnLogout">Log Out</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+    
+
+    <!-- Form Container -->
+    <div id="form-Container">
+      <!-- User details form -->
+      <form id="details-form" class="login-card">
+        <button
+          id="btn-other-users"
+          class="btn-add"
+          style="display: none;"
+          type="button"
+        >
+          Manage other users
+        </button>
+        <button
+          id="close-button"
+          class="login-button"
+          formNoValidate
+          type="button"
+        >
+          X
+        </button>
+        <br />
+        <h2>User details</h2>
+
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" required />
+        </div>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div
+          id="input-password"
+          class="input-group"
+          style="display: block;"
+        >
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+        </div>
+        <div
+          id="input-role"
+          class="input-group"
+          style="display: none;"
+        >
+          <label for="role">Role</label>
+          <input type="text" id="role" required />
+        </div>
+
+        <!-- Buttons Delete / Update -->
+        <div class="delete-update-button-container">
+          <div class="delete-button-container">
+            <button id="btnDeleteUser" class="delete-button" type="button">
+              Delete
+            </button>
+          </div>
+          <div class="update-button-container">
+            <button
+              id="btnUpdateDetails"
+              class="update-button"
+              type="submit"
+            >
+              Update
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Scripts -->
+    
+    <script src="users/detail/manageUserDetails.js" type="module"></script>
+    <script src="auth/auth.js" type="module"></script>
+  </body>
+</html>

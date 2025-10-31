@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/src/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Annals - LogIn</title>
+    <link rel="stylesheet" href="styles/pages/home.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h1>Science Annals</h1>
+      </div>
+    </header>
+
+    <!-- Log-in -->
+    <div class="login-container">
+      <!-- Login form -->
+      <form id="login-form" class="login-card">
+        <h2>Log In</h2>
+        <div class="input-group">
+          <label for="username">User</label>
+          <input type="text" id="username" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+        </div>
+        <a class="register-redirect" href="auth/register/register.html">
+          → Register
+        </a>
+        <button id="btnLogin" class="login-button" type="submit">
+          <span class="arrow-icon">→</span>
+        </button>
+      </form>
+    </div>
+
+    
+    <script src="auth/login/login.js" type="module"></script>
+  </body>
+</html>

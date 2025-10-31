@@ -1,0 +1,50 @@
+<!-- src/users/list/userList.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/src/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Annals - Users</title>
+    <!-- desde users/list → subimos dos niveles hasta styles/ -->
+    <link rel="stylesheet" href="styles/pages/home.css" />
+    <link rel="stylesheet" href="styles/components/card.css" />
+    <link rel="stylesheet" href="styles/pages/updateForm.css" />
+    <link rel="stylesheet" href="styles/pages/detail.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+          <h1>Science Annals</h1>
+      </div>
+      <!-- User area in the banner -->
+      <div class="banner-login">
+          <div id="user-area" class="user-area">
+              <div id="profile-dropdown-container" class="dropwdown">
+                  <button id="btn-profile" class="login-button-banner">User</button>
+                  <div id="button-user-details-container" class="button-logout-container">
+                      <button id="btnDetails" class="btnLogout">Profile</button>
+                  </div>
+                  <div id="button-logout-container" class="button-logout-container">
+                      <button id="btnLogout" class="btnLogout">Log Out</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+    <div id="users-column" class="column" style="margin: 0 auto;">
+      <div id="add-user-container">
+        <button id="add-user" class="btn-add">Add User</button>
+      </div>
+      <h2>Users</h2>
+      <div id="cards-container" class="item-list"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="auth/auth.js" type="module"></script>
+    <script src="users/list/userList.js" type="module"></script>
+  </body>
+</html>

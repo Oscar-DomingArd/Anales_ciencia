@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/src/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Annals - Register</title>
+    <link rel="stylesheet" href="styles/pages/home.css" />
+    <link rel="stylesheet" href="styles/pages/updateForm.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h1>Science Annals</h1>
+      </div>
+    </header>
+
+    <!-- Register -->
+    <div class="login-container">
+      <!-- Register form-->
+      <form id="register-form" class="login-card">
+        <h2>Register</h2>
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="text" id="email">
+        </div>
+        <div class="input-group">
+          <label for="username">User</label>
+          <input type="text" id="username">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password">
+        </div>
+        <button id="btnRegister" class="login-button">
+          <span class="arrow-icon">→</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="auth/register/register.js" type="module"></script>
+  </body>
+</html>
